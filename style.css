@@ -1,0 +1,143 @@
+header {
+    margin: -10px 50px;
+}
+html,body,#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    text-shadow: 0 0 0.5px black;
+    overflow: hidden;
+    font: 1vw Century Gothic,sans-serif;
+    color: black;
+    background:transparent grey;
+}
+
+#story_container {
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    height: 70%;
+    bottom: 6%;
+    left: 1%;
+    opacity: 0.85;
+    overflow: auto;
+    background: white;
+}
+
+#story h1 {
+    width: 90%;
+    color: black;
+    word-wrap: break-word;
+    opacity: 1.0;
+    padding: 0 0 0 4%;
+    font: 2vw Century Gothic,sans-serif;
+    font-weight: bold
+}
+
+#story p {
+    width: 86%;
+    color: black;
+    word-wrap: break-word;
+    opacity: 1.0;
+    padding: 0 0 0 5%;
+    font: 1vw Century Gothic,sans-serif;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+#story img {
+    display: block;
+    border: 1px solid grey;
+    max-height: 30vh;
+    max-width: 50vh;
+    margin: 2% auto;
+    opacity: 1.0
+}
+
+#story a {
+    text-decoration: none
+}
+
+#back {
+    border-bottom-left-radius: 2em;
+    width: 15%;
+    height: 3%;
+    z-index: 20;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    color: blue;
+    cursor: pointer;
+    opacity: 0.85;
+    text-align: center;
+    padding-top: 0.3%;
+    padding-bottom: 0.2%;
+    font: 1vw Century Gothic,sans-serif;
+    background: white
+}
+
+#next {
+    border-bottom-right-radius: 2em;
+    width: 15%;
+    height: 3%;
+    z-index: 20;
+    position: absolute;
+    bottom: 2%;
+    left: 16%;
+    color: violet;
+    cursor: pointer;
+    opacity: 0.85;
+    text-align: center;
+    padding-top: 0.3%;
+    padding-bottom: 0.2%;
+    font: 1vw Century Gothic,sans-serif;
+    background: white
+}
+
+#back:hover,#next:hover {
+    color: white;
+    opacity: 0.65;
+    background-color:  black;
+}
+
+#top_corners {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    width: 30%;
+    height: 3%;
+    z-index: 20;
+    position: absolute;
+    bottom: 76%;
+    left: 1%;
+    opacity: 0.85;
+    padding-top: 0.3%;
+    padding-bottom: 0.2%;
+    background: white;
+}
+
+.esriPopup .actionList, .outerPointer.left, .titlePane, .actionsPane {
+    visibility: hidden;
+    display: none;
+    padding: 0 0 0 0;
+}
+
+.esriPopup .contentPane {
+    position: relative;
+    overflow: auto;
+    padding: 5px 8px 5px 8px;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.esriPopup .sizer {
+    width: auto;
+}
+
+#graphicsLayer2_layer {
+    opacity: 0.8;
+}
